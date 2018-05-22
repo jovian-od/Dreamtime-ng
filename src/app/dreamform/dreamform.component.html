@@ -1,0 +1,23 @@
+<form (ngSubmit)="onSubmit()" #dreamForm="ngForm">
+  <div class="form-group">
+    <label for="username">Name</label>
+    <input input [(ngModel)]="dreamUsername" type="text" class="form-control" id="username" required name="dreamUsername">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input [(ngModel)]="dreamDescription" type="text" class="form-control" id="description" name="dreamDescription">
+  </div>
+  <div class="form-group">
+    <label for="duration">Duration</label>
+    <input input [(ngModel)]="dreamDuration" type="number" class="form-control" id="duration" name="dreamDuration">
+  </div>
+  <div class="form-group">
+    <label for="tags">Tags</label>
+    <input input [(ngModel)]="dreamTags" type="text" class="form-control" id="tags" name="dreamTags">
+  </div>
+
+  <button type="submit" class="button button-primary">Submit</button>
+  <b id="errormessage">{{errormessage}}</b>
+
+</form>

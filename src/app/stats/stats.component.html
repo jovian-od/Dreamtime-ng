@@ -1,0 +1,19 @@
+<h4>Found {{dreams.length}} dreams for the user: "{{term}}"</h4>
+<p class="stat">{{mean}}</p>
+<p class="stat">{{total}}</p>
+<p class="stat">Longest sleep: {{max}} hours. Shortest sleep: {{min}} hours.</p>
+<ul>
+  <li *ngFor="let dream of dreams ; let i = index" [attr.data-index]="i" class="dreamli">
+    <a href="./dream/{{dream._id}}">
+      <h3>{{ dream.description }}</h3>
+    </a>
+    <p>Dreamer: {{dream.username}}</p>
+    <pre>Dreamed in: {{dream.Created_date | date:'longDate'}},
+      {{dream.Created_date | date:'shortTime'}}  for {{dream.durationInHours}} hours</pre>
+    <b>Tags: </b>
+    <b *ngFor="let tag of dream.tags">
+      <a href="/tags/{{tag}}">{{tag}}</a>,
+    </b>
+  </li>
+</ul>
+`

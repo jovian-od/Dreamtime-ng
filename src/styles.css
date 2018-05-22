@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+/* angular-cli file: src/styles.css */
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import "./app/app.reset.css";
+@import "./app/skeleton.css";
+body{
+  background-color: #fffaf1;
+}
+.alldreamsbutton{
+  color: #112211;
+  background-color: lightgreen;
+  border: 1px solid lightgreen;
+}
+.alldreamsbutton:hover{
+  color: #fdfffd;
+
+}
+.postbutton {
+  color: #fdfffd;
+  background-color: seagreen;
+  border: 1px solid seagreen;
+}
+.postbutton:hover {
+  color: #aaffee;
+
+  border: 1px solid lightgreen;
+
+}
+
+.dreamli{
+  background-color: #f7eedd;
+  list-style-type: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+
+}
+#messagetext {
+  color: darkred;
+  text-shadow: #112211 1px 1px 1px;
+}
+.cellList{
+  font-size: 0.7em;
+  list-style-type: decimal;
+}
+
+nav .button {
+  margin: 0.3em;
+  margin-bottom:1em;
+}
