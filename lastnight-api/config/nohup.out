@@ -1,0 +1,5 @@
+
+> ls@1.0.0 start /Users/jovian/ng-project/lastnight
+> node server.js
+
+Dream list RESTful API server started on: 3000
